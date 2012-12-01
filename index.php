@@ -1,0 +1,1 @@
+<?php	//page varibles	$title = "Welcome";	include "header.php"; //start page?><span style="color:#990000">Nothing to report.</span><?php 	printLinkList(array (						"photos" => "photos.php",						"code"   => "code.php",						//"korean"   => ".php",						)				);include "footer.php";?>
