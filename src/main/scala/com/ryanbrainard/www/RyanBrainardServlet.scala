@@ -13,13 +13,7 @@ class RyanBrainardServlet extends ScalatraServlet with ScalateSupport {
   get("/") {
     jade(
       "index",
-      "title" -> "Welcome",
-      "links" -> Seq(
-        "Facebook" -> "https://www.facebook.com/ryanbrainard",
-        "Twitter"  -> "https://twitter.com/ryanbrainard",
-        "GitHub" -> "https://www.github.com/ryanbrainard",
-        "LinkedIn" -> "https://www.linkedin.com/in/ryanbrainard"
-      )
+      "title" -> "Welcome"
     )
   }
 
