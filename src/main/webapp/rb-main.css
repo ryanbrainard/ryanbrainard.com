@@ -1,6 +1,5 @@
-body,td,th {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	color: #FFFFFF;
+* {
+	font-family: Helvetica, Verdana, Arial, sans-serif;
 }
 
 body {
@@ -8,65 +7,23 @@ body {
 	width: 650px;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: #000000;
+	background-color: #555;
 	margin-top: 25px;
 }
 
-a:link {
+h1 h2 h3 h4 h5 h6 {
+  color: #222
+}
+
+a:link, a:visited {
 	color:#ffffff;
 }
-a:visited {
-	color:#ffffff;
-}
-a:active {
+
+a:active, a:hover {
 	color: #aaaaaa;
 }
-a:hover {
-	color: #aaaaaa;
-}
-	
 
-.mainBlock a:link {
-	color:#aaaaaa;
-}
-.mainBlock a:visited {
-	color:#aaaaaa;
-}
-.mainBlock a:active {
-	color: #ffffff;
-}
-.mainBlock a:hover {
-	color: #ffffff;
-}
-
-
-.titleBlock {
-	font-size: large;
-	font-weight: bold;
-}
-
-.subTitleBlock {
-	position: relative;
-	left: 20px;
-	font-size: small;
-	margin-bottom: 15px;
-	
-}
-
-.mainBlock{
-	width: 350px;
-	font-size: small;
-	color:#aaaaaa;
-}
-
-.rbImage {
-	text-align:right;
-	margin-top:-100px;
-	position:relative;
-	z-index: -1;
-}
-
-.disclaimerBlock {
+footer {
 	text-align:center;
 	font-size:x-small;
 	color:#444;

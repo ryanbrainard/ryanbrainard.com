@@ -11,12 +11,9 @@ html
     meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
     link(href="rb-main.css" rel="stylesheet" type="text/css")
   body
-    .titleBlock= headline.toLowerCase + "/"
+    h1 ryanbrainard.com
 
-    .subTitleBlock
-      a(href="/" style="text-decoration:none") ryanbrainard.com
-
-    .mainBlock
+    #mainBlock
       != body
 
       #social-icons
@@ -34,10 +31,7 @@ html
             a(href="https://www.linkedin.com/in/ryanbrainard")
               img(src="/images/social-icons/linkedin.png")
 
-    .rbImage
-      img(src="images/rb.com-small.png" width="200" height="183")
-
-    .disclaimerBlock
+    footer
       | &copy;
       = Calendar.getInstance().get(Calendar.YEAR).toString
       | Ryan Brainard
