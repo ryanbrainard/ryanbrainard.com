@@ -12,29 +12,29 @@ html
     meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
     title= "ryanbrainard.com - " + title
   body
-    h1 ryanbrainard.com
+    nav
+      ul
+        li
+          a(href="/")
+            h1(style="display:inline; color: #111") ryanbrainard.com
+        li
+          a(href="https://www.facebook.com/ryanbrainard")
+            img(src="/images/social-icons/facebook.png")
+        li
+          a(href="https://twitter.com/ryanbrainard")
+            img(src="/images/social-icons/twitter.png")
+        li
+          a(href="https://www.github.com/ryanbrainard")
+            img(src="/images/social-icons/github.png")
+        li
+          a(href="https://www.linkedin.com/in/ryanbrainard")
+            img(src="/images/social-icons/linkedin.png")
 
     #mainBlock
       != body
 
-      #social-icons
-        ul
-          li
-            a(href="https://www.facebook.com/ryanbrainard")
-              img(src="/images/social-icons/facebook.png")
-          li
-            a(href="https://twitter.com/ryanbrainard")
-              img(src="/images/social-icons/twitter.png")
-          li
-            a(href="https://www.github.com/ryanbrainard")
-              img(src="/images/social-icons/github.png")
-          li
-            a(href="https://www.linkedin.com/in/ryanbrainard")
-              img(src="/images/social-icons/linkedin.png")
-
     footer
-      | &copy;
-      = Calendar.getInstance().get(Calendar.YEAR).toString
+      | &copy; #{Calendar.getInstance().get(Calendar.YEAR).toString}
       | Ryan Brainard
 
     :javascript
