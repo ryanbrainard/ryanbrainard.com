@@ -9,7 +9,7 @@ object JettyLauncher {
     val context = new WebAppContext()
     context setContextPath "/"
     context.setResourceBase("src/main/webapp")
-    context.addServlet(classOf[com.ryanbrainard.www.RyanBrainardServlet], "/*")
+    context.addEventListener(new org.scalatra.servlet.ScalatraListener)
 
     server.setHandler(context)
 
