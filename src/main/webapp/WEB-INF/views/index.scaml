@@ -4,6 +4,6 @@
 
 %p
   %ul
-    != links.map
-      - l =>
-        - "<li><a href=" + l._2 + ">" + l._1 + "</a></li>"
+    - for(l <- links)
+      %li
+        %a(href="#{l._2}") #{l._1}
