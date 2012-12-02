@@ -11,7 +11,7 @@ class RyanBrainardServlet extends ScalatraServlet with ScalateSupport {
   }
 
   get("/") {
-    scaml(
+    jade(
       "index",
       "title" -> "Welcome",
       "links" -> Seq(
