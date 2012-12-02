@@ -1,2 +1,0 @@
-<?php	//page varibles	$title = "Photos";//start pageinclude "header.php";printLinkList(array (						"Laos & Cambodia 2008" => "photos/Cambodia_&_Laos_2008",
-						"Mongolia" => "photos/mongolia",						)				);include "footer.php";

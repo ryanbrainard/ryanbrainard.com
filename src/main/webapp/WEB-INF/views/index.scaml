@@ -1,0 +1,9 @@
+-@ val links: Seq[(String,String)]
+
+%span(style="color:#990000") Nothing to report.
+
+%p
+  %ul
+    != links.map
+      - l =>
+        - "<li><a href=" + l._2 + ">" + l._1 + "</a></li>"

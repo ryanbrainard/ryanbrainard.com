@@ -2,16 +2,25 @@ package com.ryanbrainard.www
 
 import org.scalatra._
 import scalate.ScalateSupport
+import java.util.Date
 
 class RyanBrainardServlet extends ScalatraServlet with ScalateSupport {
 
+  before() {
+    contentType="text/html"
+  }
+
   get("/") {
-    <html>
-      <body>
-        <h1>Hello, world!</h1>
-        Say <a href="hello-scalate">hello to Scalate</a>.
-      </body>
-    </html>
+    scaml(
+      "index",
+      "title" -> "Welcome",
+      "links" -> Seq(
+        "Facebook" -> "https://www.facebook.com/ryanbrainard",
+        "Twitter"  -> "https://twitter.com/ryanbrainard",
+        "GitHub" -> "https://www.github.com/ryanbrainard",
+        "LinkedIn" -> "https://www.linkedin.com/in/ryanbrainard"
+      )
+    )
   }
 
   notFound {
