@@ -7,9 +7,11 @@
 !!! 5
 html
   head
-    link(href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css")
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css")
+    link(href="http://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" type="text/css")
     link(href="rb-main.css" rel="stylesheet" type="text/css")
     meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
     title= "ryanbrainard.com - " + title
   body
     a(href="/" style="text-decoration:none;")
@@ -18,26 +20,26 @@ html
       ul
         li
           a(href="https://www.facebook.com/ryanbrainard")
-            img(src="/images/social-icons/facebook.png")
+            i(class="fa fa-facebook")
         li
           a(href="https://twitter.com/ryanbrainard")
-            img(src="/images/social-icons/twitter.png")
+            i(class="fa fa-twitter")
         li
           a(href="https://www.github.com/ryanbrainard")
-            img(src="/images/social-icons/github.png")
+            i(class="fa fa-github")
         li
           a(href="http://stackoverflow.com/users/129492/ryanbrainard")
-            img(src="/images/social-icons/stackoverflow.png")
+            i(class="fa fa-stack-overflow")
         li
-          a(href="https://www.linkedin.com/in/ryanbrainard")
-            img(src="/images/social-icons/linkedin.png")
+          a(href="https://www.linkedin.com/in/ryanbrainard  ")
+            i(class="fa fa-linkedin")
 
     #mainBlock
       != body
 
-    footer
-      | &copy; #{Calendar.getInstance().get(Calendar.YEAR).toString}
-      | Ryan Brainard
+    //footer
+    //  | &copy; #{Calendar.getInstance().get(Calendar.YEAR).toString}
+    //  | Ryan Brainard
 
     :javascript
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
