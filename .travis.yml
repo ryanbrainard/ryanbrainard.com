@@ -12,7 +12,7 @@ deploy:
   access_key_id: AKIAJKBUSLXCR6LGTQLA
   secret_access_key:
     secure: av0Och8rjCc90QT5OTEX0RM2hKNfFmowXPzcQuecbzFAFnFJ0aLBqN+Fp4jTvJGPeI0Mf2gQylzFt2Nkl9J1G8NPuUbpfNQS0ezh/4ScC/5egBrY+BCYJ4dXoQSrP3aK7eRnS3eO5V/cNIUTiSz7uujaizsozThiBnEEKksPwCw=
-  bucket: ryanbrainard.com
+  bucket: www.ryanbrainard.com
   region: us-west-1
   skip_cleanup: true
   acl: public_read
