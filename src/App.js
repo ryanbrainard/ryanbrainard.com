@@ -10,31 +10,10 @@ class App extends Component {
         </a>
         <nav>
           <ul>
-            <li>
-              <a href="https://www.facebook.com/ryanbrainard">
-                <i className="fa fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/ryanbrainard">
-                <i className="fa fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.github.com/ryanbrainard">
-                <i className="fa fa-github"></i>
-              </a>
-            </li>
-            <li>
-              <a href="http://stackoverflow.com/users/129492/ryanbrainard">
-                <i className="fa fa-stack-overflow"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/ryanbrainard  ">
-                <i className="fa fa-linkedin"></i>
-              </a>
-            </li>
+            <SocialItem fa="facebook" href="https://www.facebook.com/ryanbrainard"/>
+            <SocialItem fa="twitter" href="https://twitter.com/ryanbrainard"/>
+            <SocialItem fa="github" href="https://www.github.com/ryanbrainard"/>
+            <SocialItem fa="linkedin" href="https://www.linkedin.com/in/ryanbrainard  "/>
           </ul>
         </nav>
         <div id="mainBlock">
@@ -43,6 +22,16 @@ class App extends Component {
       </div>
     );
   }
+}
+
+const SocialItem = function ({fa, href}) {
+  return (
+    <li>
+      <a href={href}>
+        <i className={`fa fa-${fa}`}></i>
+      </a>
+    </li>
+  )
 }
 
 export default App;
