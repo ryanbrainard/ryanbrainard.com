@@ -1,35 +1,31 @@
 * {
-	font-family: Roboto, Verdana, Arial, sans-serif;
+  font-family: Roboto, Verdana, Arial, sans-serif;
+  color: #ffffff;
 }
 
 body {
-	clear: left;
-	width: 80vw;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 10vh;
-	background-color: #1ea0b7;
+  clear: left;
+  width: 80vw;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10vh;
+  background-color: #1ea0b7;
 }
 
-body, a:link, a:visited {
-	color: #4e4e4e;
+body,
+a:link,
+a:visited {
+  color: #ffffff;
 }
 
-a:active, a:hover {
-	color: #4e4e4e;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #FFFFFF;
-}
-
-code {
-  font-family: monospace;
+a:active,
+a:hover {
+  color: #4e4e4e;
 }
 
 nav {
-  margin-top: 5vh;
-  margin-bottom: 10vh;
+  margin-top: 3vh;
+  margin-bottom: 4vh;
 }
 
 nav li {
@@ -45,15 +41,15 @@ nav li a {
 
 nav li a i {
   vertical-align: bottom;
-  color: #FFF;
+  color: #fff;
 }
 
-nav li a i:hover {
-  color: #4e4e4e
+li a i:hover {
+  color: #4e4e4e;
 }
 
 footer {
-	text-align:center;
-	font-size:x-small;
-	color: #4e4e4e;
+  text-align: center;
+  font-size: x-small;
+  color: #4e4e4e;
 }
