@@ -8,19 +8,19 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 10vh;
-	background-color: #F44336;
+	background-color: #1ea0b7;
 }
 
 body, a:link, a:visited {
-	color: #bbb;
+	color: #4e4e4e;
 }
 
 a:active, a:hover {
-	color: #FFCDD2;
+	color: #4e4e4e;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #FFCDD2
+  color: #FFFFFF;
 }
 
 code {
@@ -49,11 +49,11 @@ nav li a i {
 }
 
 nav li a i:hover {
-  color: #FFCDD2
+  color: #4e4e4e
 }
 
 footer {
 	text-align:center;
 	font-size:x-small;
-	color: #FFCDD2;
+	color: #4e4e4e;
 }
