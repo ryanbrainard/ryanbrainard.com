@@ -5,11 +5,11 @@
 
 body {
   clear: left;
-  width: 80vw;
+  width: 90vw;
   margin-right: auto;
   margin-left: auto;
   margin-top: 10vh;
-  background-color: #1ea0b7;
+  background-color: #7ba17d;
 }
 
 body,
@@ -20,7 +20,7 @@ a:visited {
 
 a:active,
 a:hover {
-  color: #4e4e4e;
+  color: #4b624c;
 }
 
 nav {
@@ -41,15 +41,15 @@ nav li a {
 
 nav li a i {
   vertical-align: bottom;
-  color: #fff;
+  color: #ffffff;
 }
 
 li a i:hover {
-  color: #4e4e4e;
+  color: #4b624c;
 }
 
 footer {
   text-align: center;
   font-size: x-small;
-  color: #4e4e4e;
+  color: #4b624c;
 }
