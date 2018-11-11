@@ -39,7 +39,7 @@ class App extends Component {
           />
           <Listing
             name="How Many Korean Words Do You Know?"
-            href="http://howmanykoreanwordsdoyouknow.com"
+            href="http://howmanykoreanwordsdoyouknow.ryanbrainard.com"
             code="https://github.com/ryanbrainard/korean-vocabulary-quiz"
             intro="Calculate the approximate number of words a Korean learner knows"
           />
