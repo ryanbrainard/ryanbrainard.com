@@ -136,7 +136,7 @@ function HeadlineIcon({ fa, href }) {
 
 function ListingGroup({ name, children }) {
   return (
-    <div style={{ float: "left", width: "35em", marginRight: "5em" }}>
+    <div style={{ float: "left", width: "40%", minWidth: "20em",  marginRight: "5vw" }}>
       <h2>{name}</h2>
       <ul>{children}</ul>
     </div>
