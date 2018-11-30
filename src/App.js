@@ -27,6 +27,10 @@ class App extends Component {
               fa="linkedin"
               href="https://www.linkedin.com/in/ryanbrainard"
             />
+            <HeadlineIcon
+              fa="paypal"
+              href="https://www.paypal.me/ryanbrainard"
+            />
           </ul>
         </nav>
 
