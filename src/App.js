@@ -36,6 +36,12 @@ class App extends Component {
 
         <ListingGroup name="Projects">
           <Listing
+            name="Korean Ear (gwi)"
+            href="https://github.com/ryanbrainard/gwi"
+            code="https://github.com/ryanbrainard/gwi"
+            intro="iOS and Android mobile app where users practice listening to commonly confused Korean sounds and quiz themselves to see if they can distinguish them"
+          />
+          <Listing
             name="YouTube to Readlang"
             href="http://youtube2readlang.ryanbrainard.com"
             code="https://github.com/ryanbrainard/youtube2readlang"
