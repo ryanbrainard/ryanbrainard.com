@@ -134,7 +134,8 @@ class App extends Component {
   }
 }
 
-function HeadlineIcon({ fa, href }) {
+type HeadlineIconProps = { fa: string, href: string }
+function HeadlineIcon({ fa, href }: HeadlineIconProps) {
   return (
     <li>
       <a href={href}>
@@ -144,7 +145,8 @@ function HeadlineIcon({ fa, href }) {
   );
 }
 
-function ListingGroup({ name, children }) {
+type ListingGroupProps = { name: string, children: React.ReactNode}
+function ListingGroup({ name, children }: ListingGroupProps) {
   return (
     <div style={{ float: "left", width: "40%", minWidth: "20em",  marginRight: "5vw" }}>
       <h2>{name}</h2>
@@ -153,7 +155,8 @@ function ListingGroup({ name, children }) {
   );
 }
 
-function Listing({ name, href, code, intro, date }) {
+type ListingProps = { name: string, href: string, code?: string, intro: string, date?: string }
+function Listing({ name, href, code, intro, date }: ListingProps) {
   const hostname = new URL(href).hostname;
   return (
     <li style={{ marginBottom: "2em" }}>
@@ -183,7 +186,8 @@ function Listing({ name, href, code, intro, date }) {
   );
 }
 
-function FA({ name }) {
+type FAProps = { name: string }
+function FA({ name }: FAProps) {
   return <i className={`fa fa-${name}`} aria-hidden="true" />;
 }
 
