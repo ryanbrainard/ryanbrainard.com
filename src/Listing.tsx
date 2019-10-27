@@ -1,34 +1,40 @@
 import React from "react";
 import FA from "./FA";
 
-type Props = { name: string, href: string, code?: string, intro: string, date?: string }
+type Props = {
+  name: string;
+  href: string;
+  code?: string;
+  intro: string;
+  date?: string;
+};
 
-export default function({name, href, code, intro, date}: Props) {
-    const hostname = new URL(href).hostname;
-    return (
-        <li style={{marginBottom: "2em"}}>
-            <h3 style={{marginBottom: "0em"}}>
-                <a href={href}>{name}</a>
-            </h3>
-            <small>
-                {date && (
-                    <span>{new Date(date).toLocaleDateString()} &nbsp; - &nbsp; </span>
-                )}
+export default function({ name, href, code, intro, date }: Props) {
+  const hostname = new URL(href).hostname;
+  return (
+    <li style={{ marginBottom: "2em" }}>
+      <h3 style={{ marginBottom: "0em" }}>
+        <a href={href}>{name}</a>
+      </h3>
+      <small>
+        {date && (
+          <span>{new Date(date).toLocaleDateString()} &nbsp; - &nbsp; </span>
+        )}
 
-                <a href={href} style={{textDecoration: "none"}}>
-                    {hostname}
-                </a>
+        <a href={href} style={{ textDecoration: "none" }}>
+          {hostname}
+        </a>
 
-                {code && (
-                    <span>
+        {code && (
+          <span>
             &nbsp; - &nbsp;
-                        <a href={code}>
-              <FA name="code"/>
+            <a href={code}>
+              <FA name="code" />
             </a>
           </span>
-                )}
-            </small>
-            <p>{intro}</p>
-        </li>
-    );
+        )}
+      </small>
+      <p>{intro}</p>
+    </li>
+  );
 }
