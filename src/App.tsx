@@ -1,5 +1,8 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import "./App.css";
+import HeadlineIcon from "./HeadlineIcon";
+import ListingGroup from "./ListingGroup";
+import Listing from "./Listing";
 
 class App extends Component {
   render() {
@@ -132,63 +135,6 @@ class App extends Component {
       </div>
     );
   }
-}
-
-type HeadlineIconProps = { fa: string, href: string }
-function HeadlineIcon({ fa, href }: HeadlineIconProps) {
-  return (
-    <li>
-      <a href={href}>
-        <FA name={fa} />
-      </a>
-    </li>
-  );
-}
-
-type ListingGroupProps = { name: string, children: React.ReactNode}
-function ListingGroup({ name, children }: ListingGroupProps) {
-  return (
-    <div style={{ float: "left", width: "40%", minWidth: "20em",  marginRight: "5vw" }}>
-      <h2>{name}</h2>
-      <ul>{children}</ul>
-    </div>
-  );
-}
-
-type ListingProps = { name: string, href: string, code?: string, intro: string, date?: string }
-function Listing({ name, href, code, intro, date }: ListingProps) {
-  const hostname = new URL(href).hostname;
-  return (
-    <li style={{ marginBottom: "2em" }}>
-      <h3 style={{ marginBottom: "0em" }}>
-        <a href={href}>{name}</a>
-      </h3>
-      <small>
-        {date && (
-          <span>{new Date(date).toLocaleDateString()} &nbsp; - &nbsp; </span>
-        )}
-
-        <a href={href} style={{ textDecoration: "none" }}>
-          {hostname}
-        </a>
-
-        {code && (
-          <span>
-            &nbsp; - &nbsp;
-            <a href={code}>
-              <FA name="code" />
-            </a>
-          </span>
-        )}
-      </small>
-      <p>{intro}</p>
-    </li>
-  );
-}
-
-type FAProps = { name: string }
-function FA({ name }: FAProps) {
-  return <i className={`fa fa-${name}`} aria-hidden="true" />;
 }
 
 export default App;
