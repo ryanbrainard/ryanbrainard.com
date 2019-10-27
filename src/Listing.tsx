@@ -1,9 +1,9 @@
 import React from "react";
 import FA from "./FA";
 
-type ListingProps = { name: string, href: string, code?: string, intro: string, date?: string }
+type Props = { name: string, href: string, code?: string, intro: string, date?: string }
 
-export default function Listing({name, href, code, intro, date}: ListingProps) {
+export default function({name, href, code, intro, date}: Props) {
     const hostname = new URL(href).hostname;
     return (
         <li style={{marginBottom: "2em"}}>

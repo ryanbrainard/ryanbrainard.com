@@ -1,7 +1,7 @@
 import React from "react";
 
-type FAProps = { name: string }
+type Props = { name: string }
 
-export default function FA({name}: FAProps) {
+export default function({name}: Props) {
     return <i className={`fa fa-${name}`} aria-hidden="true"/>;
 }
